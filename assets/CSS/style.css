@@ -1,32 +1,14 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+
 body {
     background-color: #FFCED6;
     display: flex;
     min-height: 100vh;
-}
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 100px;
-    background: white;
-    
-}
-.container .leftside {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 100px;
-    background: white;
-}
-img {
-    height: 100px;
 }
 
 header {
@@ -45,10 +27,13 @@ header * {
     display: inline;
 }
 
-header p {
+
+header h1 {
     margin: auto;
-    font-size:  xx-large;
+    padding: 10px;
+    font-size: 50px;
 }
+
 header li {
     margin: 50px;
     justify-content: flex-end;
@@ -57,4 +42,5 @@ header li {
 header li a {
     color: rgb(255, 58, 23);
     text-decoration: none;
+    font-size: x-large;
 }
