@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -13,12 +13,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     height: 80px;
     display: flex;
     align-items: center;
+    background-color: white;
     box-shadow: 0 0 25px 0 black;
-    justify-content: space-around
+    justify-content: flex-end;
+    width: 100%;
 }
 
 header * {
@@ -102,53 +103,98 @@ nav h1 {
     font-weight: bold;
 }
 
-.hookup {
-    background-image: url(/assets/IMAGES/hookupapp.png);
+.hookup h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.hookup img {
+    display: inline;
     grid-column-start: -3;
     grid-column-end: -1;
-    background-color: black;
-    background-position: 90% 50%;
+    background-position: 5% 5%;
     width: 75%;
     height: 250px;
     padding: 10px;
-    margin: 10px;
+    margin: 70px;
+    object-fit: cover;
+    object-position: 10% 10%;
+    box-shadow: 0 0 25px 0 black;
+
 
 }
 
-.run-buddy {
-    background-image: url(/assets/IMAGES/run-buddy.png);
+.run-buddy h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.run-buddy img {
     grid-column-start: -3;
     grid-column-end: -1;
-    background-position: 90% 50%;
+    background-position: .5% .5%;
     width: 75%;
     height: 250px;
     padding: 10px;
-    margin: auto;
+    margin: 70px;
+    object-fit: cover;
+    object-position: 10% 10%;
+    box-shadow: 0 0 25px 0 black;
+}
+
+.javascript h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.javascript img {
+    grid-column-start: -3;
+    grid-column-end: -1;
+    object-position: 90% 50%;
+    width: 75%;
+    height: 250px;
+    padding: 10px;
+    margin: 70px;
+    object-fit: cover;
+    box-shadow: 0 0 25px 0 black;
 
 }
 
-.javascript {
-    background-image: url(/assets/IMAGES/portfoliomeow.jpeg);
-    grid-column-start: -3;
-    grid-column-end: -1;
-    background-position: 90% 50%;
-    width: 75%;
-    height: 250px;
-    padding: 10px;
-    margin: 10px;
-
+.taskinator h2 {
+    font-size: xx-large;
+    font-weight: bold;
 }
 
-.meow {
+.taskinator img {
     grid-column-start: -3;
     grid-column-end: -1;
-    background-color: black;
-    background-position: 90% 50%;
     width: 75%;
     height: 250px;
     padding: 10px;
-    margin: 10px;
+    margin: 70px;
+    object-fit: cover;
+    box-shadow: 0 0 25px 0 black;
+}
 
+.work:hover,
+.taskinator:hover,
+.javaScript:hover,
+.hookup:hover,
+.run-buddy:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.work figure img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.work figure:hover img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 
 /* work section ends */
@@ -177,4 +223,11 @@ nav h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+.contactInfo {
+    display: block;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 10px;
 }
