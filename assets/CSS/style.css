@@ -9,7 +9,6 @@
 /* Nav CSS Start */
 
 header {
-    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,6 +19,7 @@ header {
     box-shadow: 0 0 25px 0 black;
     justify-content: flex-end;
     width: 100%;
+    z-index: 1;
 }
 
 header * {
@@ -53,11 +53,17 @@ nav h1 {
 /* Hero IMG */
 
 .Derik {
-    width: 500px;
-    height: 780px;
-    border-radius: 50%;
-    padding: 85px 10px 80px;
-    margin: 50px;
+    display: inline;
+    grid-column-start: -3;
+    grid-column-end: -1;
+    background-position: 5% 5%;
+    width: 400px;
+    height: 550px;
+    padding: 10px;
+    margin: 70px;
+    object-fit: cover;
+    object-position: 10% 10%;
+    box-shadow: 0 0 25px 0 black;
 }
 
 /* About Me Section Starts */
